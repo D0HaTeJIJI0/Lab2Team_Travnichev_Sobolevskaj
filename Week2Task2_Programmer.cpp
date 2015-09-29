@@ -1,14 +1,17 @@
 #include <iostream>
 using namespace std;
+const float pi = 3.14159265358979323846264338327950288419716939937510582097494459230781640628620899; 
 
 inline double myPi(double);
+void assert(float);
 
 int main()
 {
-    cout << "Enter an epselon:\t";
+    //cout << "Enter an epselon:\t";
     double epselon;
-    cin >> epselon;
-    cout << "\nmyPi is:\t" << myPi(epselon);
+    //cin >> epselon;
+    //cout << "\nmyPi is:\t" << myPi(epselon);
+    assert
     system("pause");
     return 0;
 }
@@ -25,4 +28,10 @@ double myPi(double eps)
         member = 1.0/(n);
     }
     return 4*ans;
+}
+
+void assert(float eps)
+{
+    if (fabs(myPi(eps)-pi) <= eps) cout << "OK\n";
+    else cout << "FAIL\n";
 }
