@@ -11,7 +11,10 @@ int main()
     double epselon;
     //cin >> epselon;
     //cout << "\nmyPi is:\t" << myPi(epselon);
-    assert
+    assert(0.1);
+    assert(0.01);
+    assert(0.001);
+    assert(0.0003);
     system("pause");
     return 0;
 }
